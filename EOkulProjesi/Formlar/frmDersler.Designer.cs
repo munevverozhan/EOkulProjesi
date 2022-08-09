@@ -180,6 +180,7 @@ namespace EOkulProjesi.Formlar
             this.btnSil.TabIndex = 22;
             this.btnSil.Text = "SİL";
             this.btnSil.UseVisualStyleBackColor = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -190,6 +191,7 @@ namespace EOkulProjesi.Formlar
             this.btnGuncelle.TabIndex = 21;
             this.btnGuncelle.Text = "GÜNCELLE";
             this.btnGuncelle.UseVisualStyleBackColor = false;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnEkle
             // 
@@ -200,6 +202,7 @@ namespace EOkulProjesi.Formlar
             this.btnEkle.TabIndex = 20;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = false;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnListele
             // 
@@ -210,6 +213,7 @@ namespace EOkulProjesi.Formlar
             this.btnListele.TabIndex = 19;
             this.btnListele.Text = "LİSTELE";
             this.btnListele.UseVisualStyleBackColor = false;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // dataGridView1
             // 
