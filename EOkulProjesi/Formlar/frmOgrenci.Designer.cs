@@ -318,6 +318,7 @@ namespace EOkulProjesi.Formlar
             this.btnAra.TabIndex = 60;
             this.btnAra.Text = "ARA";
             this.btnAra.UseVisualStyleBackColor = false;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // frmOgrenci
             // 

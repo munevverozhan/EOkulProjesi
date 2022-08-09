@@ -198,5 +198,17 @@ namespace EOkulProjesi.Formlar
             temizle();
 
         }
+
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+            SqlCommand ara = new SqlCommand("select * from tblOgrenciler where ogrAd like '" + txtAranacakDeger.Text + "%' ", bgl.baglanti()); // kullanıcının girdiği bir harf ile başlayan isimleri aratan sorgu
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(ara);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            
+
+            bgl.baglanti().Close();
+        }
     }
 }
