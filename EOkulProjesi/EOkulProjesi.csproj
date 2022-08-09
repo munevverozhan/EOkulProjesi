@@ -46,26 +46,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Formlar\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmOgrenciNotlar.cs">
+    <Compile Include="Formlar\frmDersler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmOgrenciNotlar.Designer.cs">
+    <Compile Include="Formlar\frmDersler.Designer.cs">
+      <DependentUpon>frmDersler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmKulupler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmKulupler.Designer.cs">
+      <DependentUpon>frmKulupler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmOgrenciNotlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmOgrenciNotlar.Designer.cs">
       <DependentUpon>frmOgrenciNotlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmOgretmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmOgretmen.Designer.cs">
+      <DependentUpon>frmOgretmen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlBaglantisi.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Formlar\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmOgrenciNotlar.resx">
+    <EmbeddedResource Include="Formlar\frmDersler.resx">
+      <DependentUpon>frmDersler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmKulupler.resx">
+      <DependentUpon>frmKulupler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmOgrenciNotlar.resx">
       <DependentUpon>frmOgrenciNotlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmOgretmen.resx">
+      <DependentUpon>frmOgretmen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +108,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
