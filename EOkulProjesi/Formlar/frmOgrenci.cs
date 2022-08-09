@@ -162,5 +162,41 @@ namespace EOkulProjesi.Formlar
             }
 
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand sil = new SqlCommand("delete from tblOgrenciler where ogrID=@p1", bgl.baglanti());
+            sil.Parameters.AddWithValue("@p1", txtID.Text);
+            sil.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("öğrenci kaydı silindi.");
+            listele();
+            temizle();
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            string cinsiyet = "";
+            if (rbtnKiz.Checked == true)
+            {
+                cinsiyet = "Kız";
+            }
+            if (rbtnErkek.Checked == true)
+            {
+                cinsiyet = "Erkek";
+            }
+            SqlCommand guncelle = new SqlCommand("update tblOgrenciler set ogrAd=@p1,ogrSoyad=@p2,ogrKulup=@p3,ogrCinsiyet=@p4 where ogrID=@p5", bgl.baglanti());
+            guncelle.Parameters.AddWithValue("@p1",txtAd.Text);
+            guncelle.Parameters.AddWithValue("@p2",txtSoyad.Text);
+            guncelle.Parameters.AddWithValue("@p3",cmbKulup.SelectedValue.ToString());
+            guncelle.Parameters.AddWithValue("@p4",cinsiyet);
+            guncelle.Parameters.AddWithValue("@p5",txtID.Text);
+            guncelle.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("öğrenci kaydınız güncellendi.");
+            listele();
+            temizle();
+
+        }
     }
 }

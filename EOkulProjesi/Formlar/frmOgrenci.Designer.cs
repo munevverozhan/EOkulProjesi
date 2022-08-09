@@ -189,6 +189,7 @@ namespace EOkulProjesi.Formlar
             this.btnSil.TabIndex = 39;
             this.btnSil.Text = "SİL";
             this.btnSil.UseVisualStyleBackColor = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -199,6 +200,7 @@ namespace EOkulProjesi.Formlar
             this.btnGuncelle.TabIndex = 38;
             this.btnGuncelle.Text = "GÜNCELLE";
             this.btnGuncelle.UseVisualStyleBackColor = false;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnEkle
             // 
