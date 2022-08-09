@@ -35,5 +35,12 @@ namespace EOkulProjesi.Formlar
             ders.Show();
             this.Hide();
         }
+
+        private void btnOgrenci_Click(object sender, EventArgs e)
+        {
+            frmOgrenci frmOgrenci = new frmOgrenci();
+            frmOgrenci.Show();
+            this.Hide();
+        }
     }
 }

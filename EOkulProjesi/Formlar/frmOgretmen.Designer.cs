@@ -126,6 +126,7 @@ namespace EOkulProjesi.Formlar
             this.btnOgrenci.TabIndex = 2;
             this.btnOgrenci.Text = "Öğrenci İşlemleri";
             this.btnOgrenci.UseVisualStyleBackColor = false;
+            this.btnOgrenci.Click += new System.EventHandler(this.btnOgrenci_Click);
             // 
             // btnKulup
             // 
