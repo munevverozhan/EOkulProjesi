@@ -113,6 +113,7 @@ namespace EOkulProjesi.Formlar
             this.btnOgretmen.TabIndex = 3;
             this.btnOgretmen.Text = "Öğretmenler";
             this.btnOgretmen.UseVisualStyleBackColor = false;
+            this.btnOgretmen.Click += new System.EventHandler(this.btnOgretmen_Click);
             // 
             // btnOgrenci
             // 
@@ -154,6 +155,7 @@ namespace EOkulProjesi.Formlar
             this.btnSinav.TabIndex = 5;
             this.btnSinav.Text = "Sınav Notları";
             this.btnSinav.UseVisualStyleBackColor = false;
+            this.btnSinav.Click += new System.EventHandler(this.btnSinav_Click);
             // 
             // pictureBox5
             // 
@@ -182,7 +184,7 @@ namespace EOkulProjesi.Formlar
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Candara", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmOgretmen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

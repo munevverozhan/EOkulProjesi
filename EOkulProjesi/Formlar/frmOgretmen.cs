@@ -16,10 +16,10 @@ namespace EOkulProjesi.Formlar
         {
             InitializeComponent();
         }
-
+        public string ad;
         private void frmOgretmen_Load(object sender, EventArgs e)
         {
-
+            this.Text = ad;
         }
 
         private void btnKulup_Click(object sender, EventArgs e)
@@ -40,6 +40,20 @@ namespace EOkulProjesi.Formlar
         {
             frmOgrenci frmOgrenci = new frmOgrenci();
             frmOgrenci.Show();
+            this.Hide();
+        }
+
+        private void btnSinav_Click(object sender, EventArgs e)
+        {
+            frmSinavNotlar frmSinavNotlar = new frmSinavNotlar();
+            frmSinavNotlar.Show();
+            this.Hide();
+        }
+
+        private void btnOgretmen_Click(object sender, EventArgs e)
+        {
+            frmOgretmenListele ogretmenListele = new frmOgretmenListele();
+            ogretmenListele.Show();
             this.Hide();
         }
     }

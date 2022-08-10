@@ -54,6 +54,7 @@ namespace EOkulProjesi
             {
 
                 frmOgretmen ogr = new frmOgretmen();
+                ogr.ad = "HOŞ GELDİNİZ : "+dr[2];
                 ogr.Show();
                 this.Hide();
 
